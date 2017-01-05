@@ -1,9 +1,3 @@
-<!--
-* Author: Niall Maher
-* Assignment: BSc Mobile  Web Applications, Digital Skills  Academy
-* Date  : 2017/01/05
-* Ref:  https://angularjs.org/
--->
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
   <name>ToDo Application</name>
   <description>A simple application created to manage tasks with a clean user interface.</description>
