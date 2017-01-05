@@ -1,3 +1,10 @@
+/*
+* Author: Niall Maher
+* Assignment: BSc Mobile  Web Applications, Digital Skills  Academy
+* Date  : 2017/01/05
+* Ref:  https://angularjs.org/
+*/
+
 //initiate todo app to a variable
 var toDoApp = angular.module('toDoApp', ['ngAnimate']);
 // Add a controller to app for logic (setting scope to just this controller)
