@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>ToDo Application</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="angular/angular.js" type="text/javascript"></script>
+    <script src="angular/animate.js" type="text/javascript"></script>
+    <script src="app/app.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <!-- Iniate app on div container and add controller for logic -->
+    <div ng-app="toDoApp" ng-controller="toDoControl">
+        <!-- A very basic form to allow input of data -->
+        <!-- Overide normal submit function with ng-submit -->
+        <form ng-submit="addToDo()">
+            <label for="todo">I need to </label>
+            <input id="todo" name="todo" type="text" ng-model="formToDo" required/>
+            <label for="dueDate"> by </label>
+            <input id="dueDate" name="dueDate" type="date" ng-model="formDueDate" placeholder="mm/dd/yyyy" min={{Date.now()}} required/>
+            <button type="submit"><i class="fa fa-pencil"></i></button>
+        </form>
+        <!-- Data is bound to the table -->
+        <!-- New table rows are created for every item in the "todo" array -->
+        <table>
+            <tr ng-repeat="toDo in toDos" class="todo-item">
+                <td class="todo-col">{{toDo.description}}</td>
+                <!-- American date stamp as it was the  -->
+                <td class="date-col">{{toDo.dueBy | date:'MMM-dd-yyyy'}}</td>
+                <td class="delete-col"><i class="fa fa-trash-o fa-2x" ng-click="removeToDo(toDo)">
+       </table>
+    </div>  
+        <script type="text/javascript" src="cordova.js"></script>
+
+    </body>
+</html>
