@@ -1,6 +1,6 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="5.1.1">
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
-width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+target-densitydpi=medium-dpi" />
   <name>ToDo Application</name>
   <description>A simple application created to manage tasks with a clean user interface.</description>
   <author href="http://nialljoemaher.com" email="niall.maher@digitalskillsacademy.me">Niall Maher</author>
